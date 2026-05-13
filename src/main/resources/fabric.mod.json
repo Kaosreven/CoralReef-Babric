@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "coralreef",
+  "version": "${version}",
+
+  "name": "Coral Reef",
+  "description": "Adds coral reefs to ocean biomes.",
+  "authors": ["primetoxinz"],
+
+  "license": "MIT",
+
+  "environment": "*",
+  "entrypoints": {
+    "stationapi:event_bus": [
+      "com.primetoxinz.coralreef.listener.CommonListener"
+    ]
+  },
+
+  "mixins": [
+    "coralreef.mixins.json"
+  ],
+
+  "depends": {
+    "minecraft": "1.0.0-beta.7.3",
+    "stationapi": ">=2.0.0-alpha.3"
+  }
+}

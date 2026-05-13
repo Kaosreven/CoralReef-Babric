@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.primetoxinz.coralreef.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "PlayerAirMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
