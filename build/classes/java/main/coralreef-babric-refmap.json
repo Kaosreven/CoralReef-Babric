@@ -1,0 +1,14 @@
+{
+  "mappings": {
+    "com/primetoxinz/coralreef/mixin/PlayerAirMixin": {
+      "tick": "Lnet/minecraft/class_54;method_1370()V"
+    }
+  },
+  "data": {
+    "named:intermediary": {
+      "com/primetoxinz/coralreef/mixin/PlayerAirMixin": {
+        "tick": "Lnet/minecraft/class_54;method_1370()V"
+      }
+    }
+  }
+}
