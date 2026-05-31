@@ -22,7 +22,7 @@ public class GrowableCoralBlock extends CoralBlock {
         if (CommonListener.REEF1 != null && below == CommonListener.REEF1.id) {
             return isAdjacentToWater(level, x, y, z);
         }
-        return below == this.id && isAdjacentToWater(level, x, y, z);
+        return below == this.id && isAdjacentToWater(level, x, y+1, z);
     }
 
     @Override
@@ -41,7 +41,7 @@ public class GrowableCoralBlock extends CoralBlock {
             return;
         }
         // grow upward if there's water above and height limit not reached
-        if (level.getMaterial(x, y + 1, z) == Material.WATER) {
+        if (level.getMaterial(x, y + 2, z) == Material.WATER) {
             int height = 1;
             while (height < maxHeight && level.getBlockID(x, y - height, z) == this.id) {
                 height++;
